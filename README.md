@@ -72,7 +72,7 @@ url: `https://fishros.org.cn/forum/topic/20/%E5%B0%8F%E9%B1%BC%E7%9A%84%E4%B8%80
 ECB 默认IP 地址是192.168.1.30, PC 的IP 地址需要配置为同网段的192.168.1.1xx；运行demo前，需要确保机械臂在正确的零位位置。  
 ## Rviz 控制模式：
 `roslaunch gluon display.launch`  
-![image](image/1.jpg "Rviz")
+![image](image/1.jpg "Rviz")  
 正确运行后，在rviz界面中可以看到gluon 机械臂urdf模型，拖拉joint_state_publisher窗口的滑动条即可控制机械臂运动，界面中的模型和真实机械臂联动 。  
 ## Moveit + Rviz控制模式：
 `roslaunch gluon_moveit_config cm_demo.launch`  
