@@ -3,12 +3,11 @@ dexter robotics arm ros package
 ====
 ## 硬件需求与连接
 ### 连接电源
-连接电源与ECB
-
-![image](/image/gloun4.jpg "ECB 连接XT60")    ![image](image/gloun5.jpg "完成预览图")
+连接电源与ECB  
+![image](/image/gloun4.jpg "ECB 连接XT60")  ![image](image/gloun5.jpg "完成预览图")
 ### 连接执行器及其配件
 连接执行器综合线缆  
-![image](image/gloun8.jpg "任意molex接口")    ![image](image/gloun9.jpg "连接完成")
+![image](image/gloun8.jpg "任意molex接口")  ![image](image/gloun9.jpg "连接完成")
 ### 连接机械臂
 用执行器连接线连接ECB与执行器  
 ![image](image/gloun11.jpg "连接机械臂")
@@ -21,13 +20,11 @@ dexter robotics arm ros package
 ![image](image/poweron.png "示意图")  
 上电以后，执行器LED状态灯会变成黄色闪烁，启动执行器后，LED会变成绿色闪烁，这时就可以与执行器进行通信了。如果执行器内部出现错误，LED灯会变为红色闪烁，请检查执行器错误代码。
 ## 硬件环境要求
---------------------------------------------
 OS：`Ubuntu 18.04`  
 CPU: `双核 2 GHz 或更高`  
 运行内存：  `2G+`  
 硬盘: `最低25G`  
 ## ROS下载并安装
---------------------------------------------
 推荐使用鱼香ROS一键安装  
 url: `https://fishros.org.cn/forum/topic/20/%E5%B0%8F%E9%B1%BC%E7%9A%84%E4%B8%80%E9%94%AE%E5%AE%89%E8%A3%85%E7%B3%BB%E5%88%97`  
 一键安装指令  
