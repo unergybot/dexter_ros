@@ -1,6 +1,43 @@
 # dexter_ros
 dexter robotics arm ros package
-====
+[TOC]
+# 目录
+## 硬件需求与连接
+### 连接电源
+### 连接执行器及其配件
+### 连接机械臂
+### 连接电脑
+### 连接后整体视图
+### 开启电源
+## 硬件环境要求
+## ROS下载并安装
+## 环境变量
+## 构建包的依赖项
+## 下载gluon软件包
+### 下载机械臂ROS软件
+### 安装依赖包并编译
+### 配置运行环境
+## 仿真与控制
+## Rviz 控制模式
+## Moveit + Rviz控制模式
+## Moveit教程实例
+## 常见问题
+### curl not found
+### catkin_make not found
+## 编译时常见错误
+### Could NOT find ros-control-boilerplate
+### Could NOT find moveit_core
+### Could NOT find moveit_visual_tools
+### Could NOT find moveit_ros_planning_interface  
+### Could NOT find moveit_ros_perception
+### fatal error: actuatorcontroller.h
+## 运行时常见错误
+### Could not find the GUI, install the 'joint_state_publisher_gui' package
+### Exception while loading controller manager 'moveit_simple_controller/MoveItSimpleControllerManager'
+### Exception while loading planner 'ompl_interface/OMPLPlanner'
+### PluginlibFactory: The plugin for class 'moveit_rviz_plugin/MotionPlanning’ failed to load'
+### Connected error code: 803
+---------
 ## 硬件需求与连接
 ### 连接电源
 连接电源与ECB  
@@ -70,14 +107,14 @@ url: `https://fishros.org.cn/forum/topic/20/%E5%B0%8F%E9%B1%BC%E7%9A%84%E4%B8%80
 这个操作只需一次操作，重新开启Terminal 终端窗口时自动设置。  
 ## 仿真与控制
 ECB 默认IP 地址是192.168.1.30, PC 的IP 地址需要配置为同网段的192.168.1.1xx；运行demo前，需要确保机械臂在正确的零位位置。  
-## Rviz 控制模式：
+## Rviz 控制模式
 `roslaunch gluon display.launch`  
 ![image](image/1.jpg "Rviz")  
 正确运行后，在rviz界面中可以看到gluon 机械臂urdf模型，拖拉joint_state_publisher窗口的滑动条即可控制机械臂运动，界面中的模型和真实机械臂联动 。  
-## Moveit + Rviz控制模式：
+## Moveit + Rviz控制模式
 `roslaunch gluon_moveit_config cm_demo.launch`  
 这个demo 在rviz展示gluon 模型，在界面中拖拽至目标点或设置Goal State（预设值），点击按钮Plan -> Execute或 Plan and Execute, 我们可以看到gluon 模型运动到目标位置的运动轨迹（真机同步联动）。  
-## Moveit教程实例:
+## Moveit教程实例
 `roslaunch moveit_tutorials move_group_interface_tutorial.launch`  
 需要在cm_demo的基础上运行，提供了joint_state space 和 Cartesian 笛卡尔空间路径规划例子。  
 ## 常见问题
