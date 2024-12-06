@@ -2,41 +2,7 @@
 dexter robotics arm ros package
 [TOC]
 # 目录
-## 硬件需求与连接
-### 连接电源
-### 连接执行器及其配件
-### 连接机械臂
-### 连接电脑
-### 连接后整体视图
-### 开启电源
-## 硬件环境要求
-## ROS下载并安装
-## 环境变量
-## 构建包的依赖项
-## 下载gluon软件包
-### 下载机械臂ROS软件
-### 安装依赖包并编译
-### 配置运行环境
-## 仿真与控制
-## Rviz 控制模式
-## Moveit + Rviz控制模式
-## Moveit教程实例
-## 常见问题
-### curl not found
-### catkin_make not found
-## 编译时常见错误
-### Could NOT find ros-control-boilerplate
-### Could NOT find moveit_core
-### Could NOT find moveit_visual_tools
-### Could NOT find moveit_ros_planning_interface  
-### Could NOT find moveit_ros_perception
-### fatal error: actuatorcontroller.h
-## 运行时常见错误
-### Could not find the GUI, install the 'joint_state_publisher_gui' package
-### Exception while loading controller manager 'moveit_simple_controller/MoveItSimpleControllerManager'
-### Exception while loading planner 'ompl_interface/OMPLPlanner'
-### PluginlibFactory: The plugin for class 'moveit_rviz_plugin/MotionPlanning’ failed to load'
-### Connected error code: 803
+
 ---------
 ## 硬件需求与连接
 ### 连接电源
